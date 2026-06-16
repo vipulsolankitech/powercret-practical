@@ -1,98 +1,293 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="viewport" content="width=device-width" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="robots" content="noindex,nofollow" />
-	<title>WordPress &#8250; ReadMe</title>
-	<link rel="stylesheet" href="wp-admin/css/install.css?ver=20100228" />
-</head>
-<body>
-<h1 id="logo">
-	<a href="https://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" /></a>
-</h1>
-<p style="text-align: center">Semantic Personal Publishing Platform</p>
+# Powercret Practical Skills Assessment
 
-<h2>First Things First</h2>
-<p>Welcome. WordPress is a very special project to me. Every developer and contributor adds something unique to the mix, and together we create something beautiful that I am proud to be a part of. Thousands of hours have gone into WordPress, and we are dedicated to making it better every day. Thank you for making it part of your world.</p>
-<p style="text-align: right">&#8212; Matt Mullenweg</p>
+A WordPress project developed as part of the **Powercret WordPress Developer Practical Skills Assessment**.
 
-<h2>Installation: Famous 5-minute install</h2>
-<ol>
-	<li>Unzip the package in an empty directory and upload everything.</li>
-	<li>Open <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> in your browser. It will take you through the process to set up a <code>wp-config.php</code> file with your database connection details.
-		<ol>
-			<li>If for some reason this does not work, do not worry. It may not work on all web hosts. Open up <code>wp-config-sample.php</code> with a text editor like WordPad or similar and fill in your database connection details.</li>
-			<li>Save the file as <code>wp-config.php</code> and upload it.</li>
-			<li>Open <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> in your browser.</li>
-		</ol>
-	</li>
-	<li>Once the configuration file is set up, the installer will set up the tables needed for your site. If there is an error, double check your <code>wp-config.php</code> file, and try again. If it fails again, please go to the <a href="https://wordpress.org/support/forums/">WordPress support forums</a> with as much data as you can gather.</li>
-	<li><strong>If you did not enter a password, note the password given to you.</strong> If you did not provide a username, it will be <code>admin</code>.</li>
-	<li>The installer should then send you to the <a href="wp-login.php">login page</a>. Sign in with the username and password you chose during the installation. If a password was generated for you, you can then click on &#8220;Profile&#8221; to change the password.</li>
-</ol>
+---
 
-<h2>Updating</h2>
-<h3>Using the Automatic Updater</h3>
-<ol>
-	<li>Open <span class="file"><a href="wp-admin/update-core.php">wp-admin/update-core.php</a></span> in your browser and follow the instructions.</li>
-	<li>You wanted more, perhaps? That&#8217;s it!</li>
-</ol>
+# Requirements
 
-<h3>Updating Manually</h3>
-<ol>
-	<li>Before you update anything, make sure you have backup copies of any files you may have modified such as <code>index.php</code>.</li>
-	<li>Delete your old WordPress files, saving ones you&#8217;ve modified.</li>
-	<li>Upload the new files.</li>
-	<li>Point your browser to <span class="file"><a href="wp-admin/upgrade.php">/wp-admin/upgrade.php</a>.</span></li>
-</ol>
+| Requirement    | Version               |
+| -------------- | --------------------- |
+| PHP (Tested)   | 8.2                   |
+| PHP Compatible | 7.4+                  |
+| WordPress      | 7.0+                  |
+| WooCommerce    | Latest (Free Version) |
 
-<h2>Migrating from other systems</h2>
-<p>WordPress can <a href="https://developer.wordpress.org/advanced-administration/wordpress/import/">import from a number of systems</a>. First you need to get WordPress installed and working as described above, before using <a href="wp-admin/import.php">our import tools</a>.</p>
+---
 
-<h2>System Requirements</h2>
-<ul>
-	<li><a href="https://www.php.net/">PHP</a> version <strong>7.4</strong> or greater.</li>
-	<li><a href="https://www.mysql.com/">MySQL</a> version <strong>5.5.5</strong> or greater.</li>
-</ul>
+# Installation & Setup
 
-<h3>Recommendations</h3>
-<ul>
-	<li><a href="https://www.php.net/">PHP</a> version <strong>8.3</strong> or greater.</li>
-	<li><a href="https://www.mysql.com/">MySQL</a> version <strong>8.0</strong> or greater OR <a href="https://mariadb.org/">MariaDB</a> version <strong>10.6</strong> or greater.</li>
-	<li>The <a href="https://httpd.apache.org/docs/2.2/mod/mod_rewrite.html">mod_rewrite</a> Apache module.</li>
-	<li><a href="https://wordpress.org/news/2016/12/moving-toward-ssl/">HTTPS</a> support.</li>
-	<li>A link to <a href="https://wordpress.org/">wordpress.org</a> on your site.</li>
-</ul>
+### 1. Clone the Repository
 
-<h2>Online Resources</h2>
-<p>If you have any questions that are not addressed in this document, please take advantage of WordPress&#8217; numerous online resources:</p>
-<dl>
-	<dt><a href="https://wordpress.org/documentation/">HelpHub</a></dt>
-		<dd>HelpHub is the encyclopedia of all things WordPress. It is the most comprehensive source of information for WordPress available.</dd>
-	<dt><a href="https://wordpress.org/news/">The WordPress Blog</a></dt>
-		<dd>This is where you&#8217;ll find the latest updates and news related to WordPress. Recent WordPress news appears in your administrative dashboard by default.</dd>
-	<dt><a href="https://planet.wordpress.org/">WordPress Planet</a></dt>
-		<dd>The WordPress Planet is a news aggregator that brings together posts from WordPress blogs around the web.</dd>
-	<dt><a href="https://wordpress.org/support/forums/">WordPress Support Forums</a></dt>
-		<dd>If you&#8217;ve looked everywhere and still cannot find an answer, the support forums are very active and have a large community ready to help. To help them help you be sure to use a descriptive thread title and describe your question in as much detail as possible.</dd>
-	<dt><a href="https://make.wordpress.org/support/handbook/appendix/other-support-locations/introduction-to-irc/">WordPress <abbr>IRC</abbr> (Internet Relay Chat) Channel</a></dt>
-		<dd>There is an online chat channel that is used for discussion among people who use WordPress and occasionally support topics. The above wiki page should point you in the right direction. (<a href="https://web.libera.chat/#wordpress">irc.libera.chat #wordpress</a>)</dd>
-</dl>
+```bash
+git clone https://github.com/vipulsolankitech/powercret-practical.git
+```
 
-<h2>Final Notes</h2>
-<ul>
-	<li>If you have any suggestions, ideas, or comments, or if you (gasp!) found a bug, join us in the <a href="https://wordpress.org/support/forums/">Support Forums</a>.</li>
-	<li>WordPress has a robust plugin <abbr>API</abbr> (Application Programming Interface) that makes extending the code easy. If you are a developer interested in utilizing this, see the <a href="https://developer.wordpress.org/plugins/">Plugin Developer Handbook</a>. You shouldn&#8217;t modify any of the core code.</li>
-</ul>
+### 2. Place the Project in Your Local Server
 
-<h2>Share the Love</h2>
-<p>WordPress has no multi-million dollar marketing campaign or celebrity sponsors, but we do have something even better&#8212;you. If you enjoy WordPress please consider telling a friend, setting it up for someone less knowledgeable than yourself, or writing the author of a media article that overlooks us.</p>
+Example:
 
-<p>WordPress is the official continuation of b2/caf&#233;log, which came from Michel V. The work has been continued by the <a href="https://wordpress.org/about/">WordPress developers</a>. If you would like to support WordPress, please consider <a href="https://wordpress.org/donate/">donating</a>.</p>
+```text
+xampp/htdocs/powercret-practical/
+```
 
-<h2>License</h2>
-<p>WordPress is free software, and is released under the terms of the <abbr>GPL</abbr> (GNU General Public License) version 2 or (at your option) any later version. See <a href="license.txt">license.txt</a>.</p>
+### 3. Create a Database
 
-</body>
-</html>
+Create a MySQL database and import the provided SQL file (if included).
+
+### 4. Configure WordPress
+
+Copy `wp-config-sample.php` to `wp-config.php` and update the database credentials:
+
+```php
+define( 'DB_NAME', 'your_database_name' );
+define( 'DB_USER', 'your_database_user' );
+define( 'DB_PASSWORD', 'your_database_password' );
+define( 'DB_HOST', 'localhost' );
+```
+
+> **Note:** `wp-config.php` is excluded from the repository for security reasons and must be created manually.
+
+---
+
+# Dependencies
+
+* WordPress 7.0 or higher
+* WooCommerce (Free Version) — required for Task 2 (Gift Wrap Add-on)
+* PHP 7.4 or higher
+* MySQL 5.7 or higher
+
+---
+
+# Tools Used During the Practical Assessment
+
+* Sublime Text
+* ChatGPT
+* Claude Code
+* InfinityFree Hosting
+
+---
+
+# Theme Information
+
+| Theme                           | Version |
+| ------------------------------- | ------- |
+| Understrap                      | 1.2.4   |
+| Understrap Child Theme (Active) | 1.2.0   |
+
+---
+
+# Project Links
+
+### Live Website
+
+* Frontend:
+  https://prctical-powercret.infinityfree.io
+
+* Admin Panel:
+  https://prctical-powercret.infinityfree.io/wp-admin/
+
+  **Username:** `vipul`
+  **Password:** `vipul123!@#`
+
+### GitHub Repository
+
+https://github.com/vipulsolankitech/powercret-practical
+
+> Some helpful links have been added to the website header for quick access to the relevant pages.
+
+---
+
+# Task Details
+
+---
+
+# Task 1: Custom Post Type – Testimonials
+
+### Overview
+
+A custom plugin named **"Testimonial"** was created to manage testimonials.
+
+### Implementation Details
+
+* Created a custom plugin with a proper plugin header.
+* Added an `ABSPATH` check to prevent direct access to plugin files.
+* Registered the `testimonial` custom post type using `register_post_type()` and the `init` action.
+* Created a separate `custom_fields.php` file and included it in the main plugin file.
+* Added three custom fields using `add_meta_box()` and the `add_meta_boxes` action.
+* Saved custom field values using the `save_post` action.
+* Added custom columns to the testimonial listing page using the `manage_testimonial_posts_custom_column` action.
+* Enabled column sorting using:
+
+  * `manage_edit-testimonial_sortable_columns`
+  * `pre_get_posts`
+* Created a shortcode using `add_shortcode()` to display testimonials.
+* Retrieved testimonial data using `WP_Query` with a configurable limit.
+* Created the page:
+
+```
+/testimonial-front
+```
+
+and used the shortcode to display the testimonials.
+
+---
+
+# Task 2: WooCommerce Gift Wrap Add-on
+
+### Overview
+
+A custom plugin named **"Gift Wrap for WooCommerce"** was developed to provide an optional gift wrapping feature.
+
+### Implementation Details
+
+* Installed and configured WooCommerce with Cash on Delivery and demo products.
+* Created a custom plugin with a proper plugin header.
+* Added an `ABSPATH` check to prevent direct access.
+* Displayed a Gift Wrap checkbox on the cart page using:
+
+```php
+woocommerce_after_cart_table
+```
+
+* Added the gift wrap charge as a fee using:
+
+```php
+add_fee()
+```
+
+This ensures that the charge is carried through checkout, stored in the order, and displayed in the admin area.
+
+* Enqueued assets using `wp_enqueue_scripts`.
+
+* Passed AJAX variables such as:
+
+  * Nonce
+  * `admin-ajax.php` URL
+
+* Added a change event for the checkbox and sent the following parameters via AJAX:
+
+  * action
+  * gift_wrap
+  * nonce
+
+* Handled AJAX requests using:
+
+```php
+wp_ajax_*
+```
+
+* Managed the Gift Wrap selection through WooCommerce sessions.
+* Recalculated cart totals and refreshed totals using:
+
+```php
+woocommerce_cart_totals()
+```
+
+* Used the following action to reset the gift wrap option when the cart becomes empty:
+
+```php
+woocommerce_cart_emptied
+```
+
+### Result
+
+The additional Gift Wrap charge is visible:
+
+* Cart page
+* Checkout page
+* Order summary
+* WooCommerce admin order screen
+
+---
+
+# Task 3: Security Improvements
+
+### Overview
+
+The provided vulnerable code was reviewed and secured.
+
+### Security Enhancements
+
+* Added `isset()` checks before accessing `user_id`.
+* Sanitized user input to prevent invalid or malicious data.
+* Used prepared statements to protect against SQL injection.
+* Escaped output properly to prevent unwanted script execution.
+* Considered implementing capability checks, but since the original purpose of the function was unclear, no permission restrictions were added.
+* Debugged the code during page load using the `init` action.
+* Rewrote the improved code in:
+
+```text
+wp-content/plugins/Testimonial/code_debug.php
+```
+
+---
+
+# Task 4: AI Integration – Post Summarizer
+
+### Overview
+
+A plugin named **"Blog Summary"** was created to generate summaries for default WordPress posts.
+
+### Implementation Details
+
+* Added an `ABSPATH` check to prevent direct access.
+
+* Enqueued assets using `wp_enqueue_scripts`.
+
+* Localized AJAX variables such as:
+
+  * Nonce
+  * `admin-ajax.php` URL
+
+* Created the function:
+
+```php
+blog_button_after_content()
+```
+
+which renders:
+
+* The "Summarize Blog" button
+* A container to display the response
+
+This functionality is injected after the post content using the `the_content` filter.
+
+* Created:
+
+```text
+get_summary_result.php
+```
+
+to handle AJAX requests.
+
+* Triggered AJAX requests when the user clicks the **"Summarize Blog"** button.
+
+* Created:
+
+```php
+get_blog_summary()
+```
+
+and registered it using:
+
+```php
+wp_ajax_*
+```
+
+* Implemented a dummy response containing the dynamic post title.
+* Displayed the response below the button.
+* Added a sample implementation using `wp_remote_post()` for real API integration and kept it commented because no API key was available.
+* Added a simple loading indicator showing:
+
+```text
+Loading...
+```
+
+while the request is being processed.
+
+* Stored the API key in a configuration file instead of exposing it directly inside plugin files.
+
+---
+**Developed by:**
+**Vipul Solanki**
