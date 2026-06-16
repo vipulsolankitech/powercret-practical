@@ -1,293 +1,352 @@
-# Powercret Practical Skills Assessment
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Powercret Practical Skills Assessment</title>
 
-A WordPress project developed as part of the **Powercret WordPress Developer Practical Skills Assessment**.
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px;
+        line-height: 1.7;
+        color: #333;
+    }
 
----
+    h1,h2,h3{
+        color: #1e73be;
+    }
 
-# Requirements
+    table{
+        width:100%;
+        border-collapse: collapse;
+        margin-bottom:20px;
+    }
 
-| Requirement    | Version               |
-| -------------- | --------------------- |
-| PHP (Tested)   | 8.2                   |
-| PHP Compatible | 7.4+                  |
-| WordPress      | 7.0+                  |
-| WooCommerce    | Latest (Free Version) |
+    table th,
+    table td{
+        border:1px solid #ddd;
+        padding:10px;
+        text-align:left;
+    }
 
----
+    table th{
+        background:#f5f5f5;
+    }
 
-# Installation & Setup
+    .section{
+        margin-bottom:40px;
+    }
 
-### 1. Clone the Repository
+    ul{
+        padding-left:25px;
+    }
 
-```bash
-git clone https://github.com/vipulsolankitech/powercret-practical.git
-```
+    code{
+        background:#f4f4f4;
+        padding:2px 5px;
+        border-radius:4px;
+    }
 
-### 2. Place the Project in Your Local Server
+    .note{
+        background:#fff3cd;
+        padding:15px;
+        border-left:5px solid #ffc107;
+    }
 
-Example:
+    .links a{
+        color:#1e73be;
+        text-decoration:none;
+    }
 
-```text
-xampp/htdocs/powercret-practical/
-```
+    .links a:hover{
+        text-decoration:underline;
+    }
 
-### 3. Create a Database
+    .task{
+        background:#fafafa;
+        border:1px solid #e5e5e5;
+        padding:25px;
+        margin-bottom:30px;
+        border-radius:8px;
+    }
+</style>
+</head>
+<body>
 
-Create a MySQL database and import the provided SQL file (if included).
+<h1>Powercret Practical Skills Assessment</h1>
 
-### 4. Configure WordPress
+<p>
+A WordPress project developed as part of the <strong>Powercret WordPress Developer Practical Skills Assessment.</strong>
+</p>
 
-Copy `wp-config-sample.php` to `wp-config.php` and update the database credentials:
+<hr>
 
-```php
-define( 'DB_NAME', 'your_database_name' );
-define( 'DB_USER', 'your_database_user' );
-define( 'DB_PASSWORD', 'your_database_password' );
-define( 'DB_HOST', 'localhost' );
-```
+<div class="section">
+<h2>Requirements</h2>
 
-> **Note:** `wp-config.php` is excluded from the repository for security reasons and must be created manually.
+<table>
+    <tr>
+        <th>Requirement</th>
+        <th>Version</th>
+    </tr>
+    <tr>
+        <td>PHP (Tested)</td>
+        <td>8.2</td>
+    </tr>
+    <tr>
+        <td>PHP Compatible</td>
+        <td>7.4+</td>
+    </tr>
+    <tr>
+        <td>WordPress</td>
+        <td>7.0+</td>
+    </tr>
+    <tr>
+        <td>WooCommerce</td>
+        <td>Latest (Free Version)</td>
+    </tr>
+</table>
+</div>
 
----
+<div class="section">
+<h2>Installation & Setup</h2>
 
-# Dependencies
+<ol>
+    <li>
+        Clone the repository:
+        <pre>git clone https://github.com/vipulsolankitech/powercret-practical.git</pre>
+    </li>
 
-* WordPress 7.0 or higher
-* WooCommerce (Free Version) — required for Task 2 (Gift Wrap Add-on)
-* PHP 7.4 or higher
-* MySQL 5.7 or higher
+    <li>
+        Place the project inside your local server:
+        <pre>xampp/htdocs/powercret-practical/</pre>
+    </li>
 
----
+    <li>
+        Create a database and import the SQL file (if included).
+    </li>
 
-# Tools Used During the Practical Assessment
+    <li>
+        Configure WordPress by creating <code>wp-config.php</code> and updating database credentials.
+    </li>
+</ol>
 
-* Sublime Text
-* ChatGPT
-* Claude Code
-* InfinityFree Hosting
+<div class="note">
+    <strong>Note:</strong> wp-config.php is excluded from the repository for security reasons.
+</div>
+</div>
 
----
+<div class="section">
+<h2>Dependencies</h2>
 
-# Theme Information
+<ul>
+    <li>WordPress 7.0 or higher</li>
+    <li>WooCommerce (Free Version)</li>
+    <li>PHP 7.4 or higher</li>
+    <li>MySQL 5.7 or higher</li>
+</ul>
+</div>
 
-| Theme                           | Version |
-| ------------------------------- | ------- |
-| Understrap                      | 1.2.4   |
-| Understrap Child Theme (Active) | 1.2.0   |
+<div class="section">
+<h2>Tools Used During the Practical Assessment</h2>
 
----
+<ul>
+    <li>Sublime Text</li>
+    <li>ChatGPT</li>
+    <li>Claude Code</li>
+    <li>InfinityFree Hosting</li>
+</ul>
+</div>
 
-# Project Links
+<div class="section">
+<h2>Theme Information</h2>
 
-### Live Website
+<table>
+    <tr>
+        <th>Theme</th>
+        <th>Version</th>
+    </tr>
+    <tr>
+        <td>Understrap</td>
+        <td>1.2.4</td>
+    </tr>
+    <tr>
+        <td>Understrap Child Theme (Active)</td>
+        <td>1.2.0</td>
+    </tr>
+</table>
+</div>
 
-* Frontend:
-  https://prctical-powercret.infinityfree.io
+<div class="section links">
+<h2>Project Links</h2>
 
-* Admin Panel:
-  https://prctical-powercret.infinityfree.io/wp-admin/
+<p>
+<strong>Frontend:</strong><br>
+<a href="https://prctical-powercret.infinityfree.io">
+https://prctical-powercret.infinityfree.io
+</a>
+</p>
 
-  **Username:** `vipul`
-  **Password:** `vipul123!@#`
+<p>
+<strong>Admin Panel:</strong><br>
+<a href="https://prctical-powercret.infinityfree.io/wp-admin/">
+https://prctical-powercret.infinityfree.io/wp-admin/
+</a>
+</p>
 
-### GitHub Repository
+<p>
+<strong>Username:</strong> vipul<br>
+<strong>Password:</strong> vipul123!@#
+</p>
 
+<p>
+<strong>GitHub Repository:</strong><br>
+<a href="https://github.com/vipulsolankitech/powercret-practical">
 https://github.com/vipulsolankitech/powercret-practical
+</a>
+</p>
+</div>
 
-> Some helpful links have been added to the website header for quick access to the relevant pages.
+<hr>
 
----
+<h2>Task Details</h2>
 
-# Task Details
+<div class="task">
 
----
+<h2>Task 1: Custom Post Type - Testimonials</h2>
 
-# Task 1: Custom Post Type – Testimonials
+<p>
+A custom plugin named <strong>Testimonial</strong> was created to manage testimonials.
+</p>
 
-### Overview
+<h3>Implementation Details</h3>
 
-A custom plugin named **"Testimonial"** was created to manage testimonials.
+<ul>
+    <li>Created a custom plugin with a proper plugin header.</li>
+    <li>Added an ABSPATH check to prevent direct access.</li>
+    <li>Registered the <code>testimonial</code> custom post type using <code>register_post_type()</code>.</li>
+    <li>Created <code>custom_fields.php</code> for custom fields.</li>
+    <li>Added three meta fields using <code>add_meta_box()</code>.</li>
+    <li>Saved fields using the <code>save_post</code> hook.</li>
+    <li>Added custom columns to the admin listing.</li>
+    <li>Made columns sortable.</li>
+    <li>Created a shortcode using <code>add_shortcode()</code>.</li>
+    <li>Retrieved data using <code>WP_Query</code>.</li>
+    <li>Displayed testimonials on the <strong>/testimonial-front</strong> page.</li>
+</ul>
 
-### Implementation Details
+</div>
 
-* Created a custom plugin with a proper plugin header.
-* Added an `ABSPATH` check to prevent direct access to plugin files.
-* Registered the `testimonial` custom post type using `register_post_type()` and the `init` action.
-* Created a separate `custom_fields.php` file and included it in the main plugin file.
-* Added three custom fields using `add_meta_box()` and the `add_meta_boxes` action.
-* Saved custom field values using the `save_post` action.
-* Added custom columns to the testimonial listing page using the `manage_testimonial_posts_custom_column` action.
-* Enabled column sorting using:
+<div class="task">
 
-  * `manage_edit-testimonial_sortable_columns`
-  * `pre_get_posts`
-* Created a shortcode using `add_shortcode()` to display testimonials.
-* Retrieved testimonial data using `WP_Query` with a configurable limit.
-* Created the page:
+<h2>Task 2: WooCommerce Gift Wrap Add-on</h2>
 
+<p>
+A custom plugin named <strong>Gift Wrap for WooCommerce</strong> was developed.
+</p>
+
+<h3>Implementation Details</h3>
+
+<ul>
+    <li>Installed and configured WooCommerce.</li>
+    <li>Added a Gift Wrap checkbox on the cart page.</li>
+    <li>Added the gift wrap amount using <code>add_fee()</code>.</li>
+    <li>Enqueued scripts using <code>wp_enqueue_scripts</code>.</li>
+    <li>Passed AJAX variables including nonce and admin-ajax URL.</li>
+    <li>Handled requests using <code>wp_ajax_*</code>.</li>
+    <li>Stored values in WooCommerce sessions.</li>
+    <li>Updated cart totals dynamically.</li>
+    <li>Reset the option using <code>woocommerce_cart_emptied</code>.</li>
+</ul>
+
+<h3>Result</h3>
+
+<ul>
+    <li>Cart Page</li>
+    <li>Checkout Page</li>
+    <li>Order Summary</li>
+    <li>WooCommerce Admin Order Screen</li>
+</ul>
+
+</div>
+
+<div class="task">
+
+<h2>Task 3: Security Improvements</h2>
+
+<h3>Enhancements</h3>
+
+<ul>
+    <li>Added <code>isset()</code> checks.</li>
+    <li>Sanitized user input.</li>
+    <li>Used prepared statements to prevent SQL injection.</li>
+    <li>Escaped output properly.</li>
+    <li>Debugged the function using the <code>init</code> hook.</li>
+    <li>Stored the updated code in:
+        <code>wp-content/plugins/Testimonial/code_debug.php</code>
+    </li>
+</ul>
+
+</div>
+
+<div class="task">
+
+<h2>Task 4: AI Integration - Post Summarizer</h2>
+
+<p>
+A plugin named <strong>Blog Summary</strong> was created to summarize WordPress posts.
+</p>
+
+<h3>Implementation Details</h3>
+
+<ul>
+    <li>Added an ABSPATH security check.</li>
+    <li>Enqueued scripts and localized AJAX variables.</li>
+    <li>Added the "Summarize Blog" button after post content.</li>
+    <li>Handled requests using AJAX.</li>
+    <li>Created <code>get_blog_summary()</code> to process requests.</li>
+    <li>Implemented a dummy response using the dynamic post title.</li>
+    <li>Included a sample API implementation using <code>wp_remote_post()</code>.</li>
+    <li>Displayed a loading message while processing.</li>
+    <li>Stored API keys in a configuration file.</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Summary</h2>
+
+<ul>
+    <li>Custom Plugin Development</li>
+    <li>Custom Post Types</li>
+    <li>Meta Boxes</li>
+    <li>Shortcodes</li>
+    <li>WP_Query</li>
+    <li>WooCommerce Customization</li>
+    <li>AJAX Handling</li>
+    <li>Session Management</li>
+    <li>Security Best Practices</li>
+    <li>Prepared Statements</li>
+    <li>Input Sanitization</li>
+    <li>AI Integration Concepts</li>
+    <li>WordPress Hooks and Filters</li>
+    <li>Clean File Organization</li>
+</ul>
+
+</div>
+
+<hr>
+
+<p>
+<strong>Developed By:</strong><br>
+Vipul Solanki
+</p>
+
+</body>
+</html>
 ```
-/testimonial-front
-```
-
-and used the shortcode to display the testimonials.
-
----
-
-# Task 2: WooCommerce Gift Wrap Add-on
-
-### Overview
-
-A custom plugin named **"Gift Wrap for WooCommerce"** was developed to provide an optional gift wrapping feature.
-
-### Implementation Details
-
-* Installed and configured WooCommerce with Cash on Delivery and demo products.
-* Created a custom plugin with a proper plugin header.
-* Added an `ABSPATH` check to prevent direct access.
-* Displayed a Gift Wrap checkbox on the cart page using:
-
-```php
-woocommerce_after_cart_table
-```
-
-* Added the gift wrap charge as a fee using:
-
-```php
-add_fee()
-```
-
-This ensures that the charge is carried through checkout, stored in the order, and displayed in the admin area.
-
-* Enqueued assets using `wp_enqueue_scripts`.
-
-* Passed AJAX variables such as:
-
-  * Nonce
-  * `admin-ajax.php` URL
-
-* Added a change event for the checkbox and sent the following parameters via AJAX:
-
-  * action
-  * gift_wrap
-  * nonce
-
-* Handled AJAX requests using:
-
-```php
-wp_ajax_*
-```
-
-* Managed the Gift Wrap selection through WooCommerce sessions.
-* Recalculated cart totals and refreshed totals using:
-
-```php
-woocommerce_cart_totals()
-```
-
-* Used the following action to reset the gift wrap option when the cart becomes empty:
-
-```php
-woocommerce_cart_emptied
-```
-
-### Result
-
-The additional Gift Wrap charge is visible:
-
-* Cart page
-* Checkout page
-* Order summary
-* WooCommerce admin order screen
-
----
-
-# Task 3: Security Improvements
-
-### Overview
-
-The provided vulnerable code was reviewed and secured.
-
-### Security Enhancements
-
-* Added `isset()` checks before accessing `user_id`.
-* Sanitized user input to prevent invalid or malicious data.
-* Used prepared statements to protect against SQL injection.
-* Escaped output properly to prevent unwanted script execution.
-* Considered implementing capability checks, but since the original purpose of the function was unclear, no permission restrictions were added.
-* Debugged the code during page load using the `init` action.
-* Rewrote the improved code in:
-
-```text
-wp-content/plugins/Testimonial/code_debug.php
-```
-
----
-
-# Task 4: AI Integration – Post Summarizer
-
-### Overview
-
-A plugin named **"Blog Summary"** was created to generate summaries for default WordPress posts.
-
-### Implementation Details
-
-* Added an `ABSPATH` check to prevent direct access.
-
-* Enqueued assets using `wp_enqueue_scripts`.
-
-* Localized AJAX variables such as:
-
-  * Nonce
-  * `admin-ajax.php` URL
-
-* Created the function:
-
-```php
-blog_button_after_content()
-```
-
-which renders:
-
-* The "Summarize Blog" button
-* A container to display the response
-
-This functionality is injected after the post content using the `the_content` filter.
-
-* Created:
-
-```text
-get_summary_result.php
-```
-
-to handle AJAX requests.
-
-* Triggered AJAX requests when the user clicks the **"Summarize Blog"** button.
-
-* Created:
-
-```php
-get_blog_summary()
-```
-
-and registered it using:
-
-```php
-wp_ajax_*
-```
-
-* Implemented a dummy response containing the dynamic post title.
-* Displayed the response below the button.
-* Added a sample implementation using `wp_remote_post()` for real API integration and kept it commented because no API key was available.
-* Added a simple loading indicator showing:
-
-```text
-Loading...
-```
-
-while the request is being processed.
-
-* Stored the API key in a configuration file instead of exposing it directly inside plugin files.
-
----
-**Developed by:**
-**Vipul Solanki**
